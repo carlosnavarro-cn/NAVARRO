@@ -1,4 +1,15 @@
 NAVARRO
 
 
-<iframe allowfullscreen="allowfullscreen" scrolling="no" class="fp-iframe" src="https://heyzine.com/flip-book/e7b5f7016a.html" style="border: 1px solid lightgray; width: 100%; height: 400px;"></iframe>
+import HTMLFlipBook from 'react-pageflip';
+
+function MyBook(props) {
+    return (
+        <HTMLFlipBook width={300} height={500}>
+            <div className="demoPage">Page 1</div>
+            <div className="demoPage">Page 2</div>
+            <div className="demoPage">Page 3</div>
+            <div className="demoPage">Page 4</div>
+        </HTMLFlipBook>
+    );
+}
